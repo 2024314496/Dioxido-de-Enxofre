@@ -1,0 +1,390 @@
+* {
+    /* reset css*/
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+
+:root {
+    --primary-color: #E4D96F;
+    --secondary-color: #93873F;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    min-width: 375px;
+    max-width: 1168px;
+    margin: auto;
+    padding: 0% 3%;
+}
+
+section .container {
+    animation: opacity 2s ease-out;
+
+}
+
+.img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+}
+
+section {
+    /* min-height: 70vh; */
+    padding: 0rem 0rem 2rem;
+}
+
+/*                          */
+.header {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 2;
+    background-color: var(--primary-color);
+}
+
+.header>.container {
+    padding: 18px 3%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#ht1 {
+    display: block;
+}
+
+#ht2 {
+    display: none;
+}
+
+#links a {
+    color: var(--black);
+}
+
+#home {
+    background-image: url(imgs/mina.png);
+    padding: 3rem 0 2rem;
+    height: 75vh;
+}
+
+#home-mini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#home-mini>div {
+    animation: slideDown 2s ease-in-out;
+}
+
+
+
+
+#home-mini h1 {
+    font-size: 3.3rem;
+    flex: 1;
+    text-align: center;
+}
+
+#home-mini .title {
+    text-align: center;
+}
+
+
+.quimic-info {
+    padding-top: 20px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.content-title {
+    padding: 20px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    height: 100%;
+}
+
+
+
+.quimic-info .img {
+    flex: 1;
+    min-height: 400px;
+}
+
+#explanation .img {
+    background-image: url(imgs/dioxido-de-enxofre.jpg);
+}
+
+#properties .img {
+    background-image: url(imgs/3d.png);
+    background-size: contain;
+}
+
+.text {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+
+    gap: 15px;
+}
+
+#properties .text {
+    flex-flow: row;
+    align-items: normal;
+}
+
+#properties hr {
+    border: solid 1px var(--black);
+}
+
+.prop {
+    flex: 1;
+}
+
+.prop p {
+    padding-top: 10px;
+}
+
+
+.extra-info {
+    animation: opacity 2s ease-in-out;
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+
+.extra-info .img {
+    min-height: 200px;
+    background-size: contain;
+    flex: 1;
+
+}
+
+.extra-info p {
+    flex: 2;
+}
+
+#info1 .img {
+    background-image: url(imgs/dioxido-enxofre.webp);
+}
+
+#info2 .img {
+    background-image: url(imgs/vinho.png);
+}
+
+#info3 .img {
+    background-image: url(imgs/ligacaocovalente.png);
+}
+
+
+
+
+
+
+
+.options {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+}
+
+input[type="radio"] {
+    accent-color: var(--primary-color);
+}
+
+.question {
+    padding: 0rem 0rem 2rem;
+    display: none;
+    opacity: 0;
+    animation: opacity 2s ease-in-out;
+}
+
+
+
+.respond {
+    margin-top: 20px;
+    border: solid 2px var(--primary-color);
+    border-radius: 7px;
+    padding: 4px 8px;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+.feedback {
+    margin: 20px 0px;
+}
+
+
+.back {
+    padding: 0.5rem;
+    border-radius: 3px;
+
+}
+
+.correct {
+    color: #28a745;
+    background: #d4edda;
+}
+
+.incorrect {
+    color: #dc3545;
+    background: #f8d7da;
+}
+
+.null {
+    color: #3591dc;
+    background: #c4d9eb;
+}
+
+.quiz-complete {
+    display: none;
+    animation: opacity 2s ease-in-out;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+footer {
+    background: var(--secondary-color);
+    /* height: 40vh; */
+}
+
+.footer-menu {
+    background-color: var(--primary-color);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-nav {
+    display: flex;
+
+    gap: 20px;
+}
+
+.footer-nav button {
+    color: var(--black);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.footer-content {
+    min-height: 20vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.info {
+    display: none;
+}
+
+.info.active {
+    display: flex;
+}
+
+#info-geral.active {
+    flex-flow: row;
+    gap: 20px;
+}
+
+
+
+#info-geral.active hr {
+    border: solid 1px var(--black);
+}
+
+#info-references.active {
+    flex-flow: column;
+}
+
+@media (max-width: 768px) {
+    .properties .img {
+        order: -1;
+    }
+
+    #info-geral.active,
+    .content,
+    .extra-info {
+        flex-flow: column;
+    }
+
+    .extra-info {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .extra-info .img:not(#info3 .img){
+        background-size: cover;
+    }
+
+    #ht1 {
+        display: none;
+    }
+
+    #ht2 {
+        display: block;
+    }
+
+
+}

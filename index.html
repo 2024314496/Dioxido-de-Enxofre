@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dióxido de Enxofre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="imgs/SO2.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <strong class="subtitle header-title" id="ht1">Dióxido de Enxofre</strong>
+            <strong class="subtitle header-title" id="ht2">SO₂</strong>
+            <div id="links">
+                <a href="#explanation"><b>Conhecer</b></a>
+                <a href="#properties"><b>Propriedades</b></a>
+                <a href="#questions"><b>Quiz</b></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="img">
+            <div id="home-mini" class="container">
+                <div>
+                    <h1>Dióxido de Enxofre</h1>
+                    <h2 class="title">SO₂</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="explanation" class="quimic-info">
+            <div class="container">
+                <h2 class="title content-title">Conhecendo o Dióxido de Enxofre</h2>
+                <div class="content">
+                    <div class="img">
+                    </div>
+                    <div class="text">
+                        <p>
+                            O dióxido de enxofre (SO₂) é uma molécula polar formada por ligações covalentes entre o
+                            enxofre central e dois átomos de oxigênio. Não conduz eletricidade devido à sua natureza
+                            covalente molecular.
+                        </p>
+                        <p>
+                            O dióxido de enxofre foi identificado por Joseph Priestley em 1774 e estudado por Lavoisier.
+                            Na natureza, é produzido por erupções vulcânicas e decomposição orgânica. Industrialmente,
+                            obtém-se pela combustão do enxofre (S + O₂ → SO₂) ou como subproduto da metalurgia de
+                            sulfetos metálicos.
+                        </p>
+                        <p>
+                            O SO₂ tem diversas aplicações: conservante alimentar, branqueador na indústria de
+                            papel, matéria-prima para ácido sulfúrico e antioxidante na vinicultura. Entretanto, é um
+                            poluente atmosférico que causa chuva ácida e problemas respiratórios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="properties" class="quimic-info">
+            <div class="container">
+                <h2 class="title content-title">Propriedades Químicas e Físicas</h2>
+                <div class="content">
+                    <div class="text">
+                        <div class="prop">
+                            <p><strong>Fórmula molecular:</strong><br>
+                                SO₂ </p>
+                            <p>
+                                <strong>Geometria molecular:</strong><br>
+                                Angular 
+                            </p>
+                            <p><strong>Ângulo de ligação:</strong><br>
+                            119°
+                            </p>
+                            <p><strong>Tipo de ligação:</strong><br>
+                                Covalente polar</p>
+                        </div>
+
+                        <hr>
+                        <div class="prop">
+                            <p>
+                                <strong>Densidade:</strong><br>
+                                2.26 g/L
+                            </p>
+                            <p>
+                                <strong>Ponto de Ebulição:</strong><br>
+                                -10°C
+                            </p>
+                            <p>
+                                <strong>Ponto de Fusão:</strong><br>
+                                -75.5ºC
+                            </p>
+                            <p>
+                                <strong>Solubilidade:</strong><br>
+                                Solúvel em água
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="questions">
+            <div class="container">
+                <form id="quiz-form">
+                    <!-- Pergunta 1 -->
+                    <article class="question show" id="question1">
+                        <h2 class="title">Qual é o estado físico do SO₂ à temperatura ambiente?</h2>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q1" value="a">
+                                <span><b>a)</b> Sólido</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="b">
+                                <span><b>b)</b> Líquido</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="c">
+                                <span><b>c)</b> Gasoso</span>
+                            </label>
+                        </div>
+                        <button class="respond" type="button" id="respond1"
+                            onclick="checkAnswer(1, 'c')"><strong>Responder</strong></button>
+                        <div class="feedback" id="feedback1" style="display: none;"></div>
+                        <div class="extra-info" id="info1" style="display: none;">
+                            <div class="img"></div>
+                            <p>O SO₂ é gasoso à temperatura ambiente (cerca de 25°C) porque seu ponto de ebulição é
+                                -10°C, bem abaixo da temperatura normal. Isso significa que mesmo em temperaturas baixas
+                                no inverno, o SO₂ permanece na forma gasosa, importante para
+                                seu comportamento na atmosfera e sua capacidade de se dispersar no ar, contribuindo para
+                                a poluição atmosférica.</p>
+                        </div>
+                    </article>
+
+                    <!-- Pergunta 2 -->
+                    <article class="question" id="question2">
+                        <h2 class="title">Quais são as principais aplicações industriais do SO₂? <span
+                                class="subtitle">(Marque todas as
+                                alternativas corretas)</span></h2>
+                        <div class="options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="q2" value="conservante">
+                                <span>Conservante alimentar</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="q2" value="combustivel">
+                                <span>Combustível para motores</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="q2" value="papel">
+                                <span>Branqueador na indústria de papel</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="q2" value="medicamento">
+                                <span>Medicamento contra gripe</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="q2" value="acido">
+                                <span>Matéria-prima para ácido sulfúrico</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="q2" value="vinicultura">
+                                <span>Antioxidante na vinicultura</span>
+                            </label>
+                        </div>
+                        <button class="respond" type="button" id="respond2"
+                            onclick="checkAnswerMultiple(2, ['conservante', 'papel', 'acido', 'vinicultura'])"><strong>Responder</strong></button>
+                        <div class="feedback" id="feedback2" style="display: none;"></div>
+                        <div class="extra-info" id="info2" style="display: none;">
+                            <p>O SO₂ tem múltiplas aplicações industriais controladas: como conservante alimentar
+                                em doses seguras, branqueador na indústria de papel, matéria-prima para ácido sulfúrico
+                                e antioxidante na vinicultura. A segurança do uso alimentar depende de concentrações
+                                rigorosamente regulamentadas.</p>
+                            <div class="img"></div>
+                        </div>
+                    </article>
+
+                    <!-- Pergunta 3 -->
+                    <article class="question" id="question3">
+                        <h2 class="title">Por que a geometria molecular do SO₂ é angular e não linear, mesmo tendo
+                            apenas 3 átomos?</h2>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q3" value="a">
+                                <span><b>a)</b> Porque o enxofre é maior que o oxigênio</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="b">
+                                <span><b>b)</b> Por causa de dois elétrons não ligantes no enxofre</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="c">
+                                <span><b>c)</b> Porque as ligações são polares</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="d">
+                                <span><b>d)</b> Por causa da repulsão entre os átomos de oxigênio</span>
+                            </label>
+                        </div>
+                        <button class="respond" type="button" id="respond3"
+                            onclick="checkAnswer(3, 'b')"><strong>Responder</strong></button>
+                        <div class="feedback" id="feedback3" style="display: none;"></div>
+                        <div class="extra-info" id="info3" style="display: none;">
+                            <div class="img"></div>
+                            <p>O SO₂ tem formato angular porque o enxofre, no centro, além de se ligar aos dois
+                                oxigênios, também guarda um par de elétrons livre. Esse par “empurra” os oxigênios,
+                                deixando a molécula em forma de V, com um ângulo em torno de 119°. Se não existisse esse
+                                par de elétrons, ela seria linear, como o CO₂.</p>
+                        </div>
+                    </article>
+
+                    <div class="quiz-complete" id="quiz-complete">
+                        <h2>🎉 Parabéns! Você completou o questionário!</h2>
+                        <p>Você demonstrou conhecimento sobre as propriedades químicas e físicas do dióxido de enxofre.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <div class="container">
+                <div class="footer-nav">
+                    <button onclick="changeFooter('geral')"><strong>Informações Gerais</strong></button>
+                    <button onclick="changeFooter('references')"><strong>Referências</strong></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container footer-content">
+
+
+
+            <div id="info-geral" class="info active">
+                <div class="info-academic">
+                    <h3><strong>Informações Acadêmicas:</strong></h3>
+                    <p><strong>Disciplina:</strong> Programação Web Front-End & Química I</p>
+                    <p><strong>Professores:</strong> Tiago Lopes Telecken & Nicolle Ruppenthal</p>
+                    <p><strong>Ano:</strong> 2025</p>
+                </div>
+                <hr>
+                <div class="info-personal">
+                    <h3><strong>Informações Pessoais:</strong></h3>
+                    <p><strong>Nome:</strong> Bruno Fagundes Garcia</p>
+                    <p><strong>Matrícula:</strong> 2024314496</p>
+                </div>
+            </div>
+
+            <div id="info-references" class="info">
+                <p><b>1. PubChem.</b> Sulfur dioxide - Compound Summary.<br>Disponível em <a target="_blank"
+                        href="https://pubchem.ncbi.nlm.nih.gov/compound/1119">https://pubchem.ncbi.nlm.nih.gov/compound/1119</a>
+                </p>
+                <p>
+                    <b>2. Lumex Instruments Brasil.</b> Químicos famosos na história: Joseph Priestley (1733-1804).<br>
+                    Disponível em:
+                    <a target="_blank"
+                        href="https://www.lumexinstruments.com/br/blog/07.php">https://www.lumexinstruments.com/br/blog/07.php</a>
+                </p>
+                <p><b>3. Agência Portuguesa do Ambiente.</b> Dióxido de Enxofre (SO₂).<br>Disponível em
+                    <a target="_blank"
+                        href="https://apambiente.pt/ar-e-ruido/dioxido-de-enxofre-so2">https://apambiente.pt/ar-e-ruido/dioxido-de-enxofre-so2</a>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- 22 a 26 -->
